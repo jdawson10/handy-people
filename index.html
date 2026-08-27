@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Handy People</title>
-  <meta name="description" content="Home help for Taos County. Small work that does not need a contractor, and monthly checks for houses that sit empty.">
+  <title>Level Hands</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="description" content="Handyman services in Taos. Small work that does not need a contractor, and monthly checks for houses that sit empty.">
   <meta name="theme-color" content="#f4f1eb">
   <style>
     :root {
@@ -17,6 +18,7 @@
       --line: #d4cec4;
       --accent: #2c3338;
       --accent-fg: #f4f1eb;
+      --city: #6d8f8a;
       --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
       --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
     }
@@ -131,6 +133,16 @@
     @media (min-width: 768px) { .foot { padding: 3rem 2rem 6rem; } }
     .status { margin-top: 2rem; color: var(--fg-muted); font-size: 1.125rem; line-height: 1.6; }
     .wait { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+
+    .brand { display: flex; align-items: center; gap: 0.5rem; }
+    .vial { display: block; width: 100%; height: auto; }
+    .vial-sm { width: 2rem; height: auto; flex-shrink: 0; }
+    .vial-hero { width: 11rem; height: auto; margin: 0 0 2rem; }
+    @media (min-width: 768px) { .vial-hero { width: 13rem; margin-bottom: 2.5rem; } }
+    .caption { margin: 1.25rem 0 0; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.32em; color: var(--fg-muted); }
+    .city { margin: 0.75rem 0 0; font-family: var(--serif); font-size: 1.125rem; color: var(--city); }
+    @media (min-width: 768px) { .city { font-size: 1.25rem; } }
+    .foot-brand { display: flex; align-items: center; gap: 0.5rem; font-family: var(--serif); font-size: 1.125rem; margin: 0; }
     [hidden] { display: none !important; }
   </style>
 </head>
@@ -138,7 +150,31 @@
   <a class="skip" href="#content">Skip to content</a>
   <header>
     <div class="bar">
-      <a class="brand" href="#content">Handy People</a>
+      <a class="brand" href="#content"><span class="vial-sm"><svg viewBox="0 0 320 110" class="vial" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="hdr-fluid" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#c5c56f"/>
+          <stop offset="50%" stop-color="#b0b15e"/>
+          <stop offset="100%" stop-color="#8c8f4c"/>
+        </linearGradient>
+        <linearGradient id="hdr-bubble" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="55%" stop-color="#f3efe6"/>
+          <stop offset="100%" stop-color="#d4cfc4"/>
+        </linearGradient>
+        <clipPath id="hdr-clip"><path d="M70 30C114 38 206 38 250 30C272 28 286 38 286 55C286 72 272 82 250 80C206 72 114 72 70 80C48 82 34 72 34 55C34 38 48 28 70 30Z"/></clipPath>
+      </defs>
+      <line x1="160" y1="10" x2="160" y2="100" stroke="#1a1916" stroke-width="1.35" vector-effect="non-scaling-stroke"/>
+      <path d="M70 30C114 38 206 38 250 30C272 28 286 38 286 55C286 72 272 82 250 80C206 72 114 72 70 80C48 82 34 72 34 55C34 38 48 28 70 30Z" fill="#f7f4ee"/>
+      <g clip-path="url(#hdr-clip)">
+        <rect x="36" y="38" width="248" height="42" fill="url(#hdr-fluid)"/>
+        <ellipse cx="160" cy="40" rx="27" ry="13" fill="url(#hdr-bubble)"/>
+        <ellipse cx="151" cy="36" rx="9" ry="4" fill="#fff" opacity="0.5"/>
+      </g>
+      <path d="M70 30C114 38 206 38 250 30C272 28 286 38 286 55C286 72 272 82 250 80C206 72 114 72 70 80C48 82 34 72 34 55C34 38 48 28 70 30Z" fill="none" stroke="#1a1916" stroke-width="2.1" vector-effect="non-scaling-stroke"/>
+      <line x1="124" y1="30" x2="124" y2="70" stroke="#1a1916" stroke-width="1.35" vector-effect="non-scaling-stroke"/>
+      <line x1="196" y1="30" x2="196" y2="70" stroke="#1a1916" stroke-width="1.35" vector-effect="non-scaling-stroke"/>
+    </svg></span>Level Hands</a>
       <nav aria-label="Page">
         <a href="#visit">Visit</a><span class="dot" aria-hidden="true">·</span><a href="#monthly">Monthly check</a>
       </nav>
@@ -148,9 +184,35 @@
     <section aria-labelledby="hero-title">
       <img class="hero-img" src="hero.jpg" alt="">
       <div class="wrap">
-        <h1 id="hero-title">Handy People</h1>
-        <p class="lead">Home help for Taos County.</p>
-        <p class="muted">Small work that does not need a contractor — hanging and assembly, a list of fixes in one visit, seasonal upkeep, and scheduled checks for houses that sit empty.</p>
+        <span class="vial-hero"><svg viewBox="0 0 320 110" class="vial" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="hero-fluid" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#c5c56f"/>
+          <stop offset="50%" stop-color="#b0b15e"/>
+          <stop offset="100%" stop-color="#8c8f4c"/>
+        </linearGradient>
+        <linearGradient id="hero-bubble" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="55%" stop-color="#f3efe6"/>
+          <stop offset="100%" stop-color="#d4cfc4"/>
+        </linearGradient>
+        <clipPath id="hero-clip"><path d="M70 30C114 38 206 38 250 30C272 28 286 38 286 55C286 72 272 82 250 80C206 72 114 72 70 80C48 82 34 72 34 55C34 38 48 28 70 30Z"/></clipPath>
+      </defs>
+      <line x1="160" y1="10" x2="160" y2="100" stroke="#1a1916" stroke-width="1.35" vector-effect="non-scaling-stroke"/>
+      <path d="M70 30C114 38 206 38 250 30C272 28 286 38 286 55C286 72 272 82 250 80C206 72 114 72 70 80C48 82 34 72 34 55C34 38 48 28 70 30Z" fill="#f7f4ee"/>
+      <g clip-path="url(#hero-clip)">
+        <rect x="36" y="38" width="248" height="42" fill="url(#hero-fluid)"/>
+        <ellipse cx="160" cy="40" rx="27" ry="13" fill="url(#hero-bubble)"/>
+        <ellipse cx="151" cy="36" rx="9" ry="4" fill="#fff" opacity="0.5"/>
+      </g>
+      <path d="M70 30C114 38 206 38 250 30C272 28 286 38 286 55C286 72 272 82 250 80C206 72 114 72 70 80C48 82 34 72 34 55C34 38 48 28 70 30Z" fill="none" stroke="#1a1916" stroke-width="2.1" vector-effect="non-scaling-stroke"/>
+      <line x1="124" y1="30" x2="124" y2="70" stroke="#1a1916" stroke-width="1.35" vector-effect="non-scaling-stroke"/>
+      <line x1="196" y1="30" x2="196" y2="70" stroke="#1a1916" stroke-width="1.35" vector-effect="non-scaling-stroke"/>
+    </svg></span>
+        <h1 id="hero-title">Level Hands</h1>
+        <p class="caption">handyman services</p>
+        <p class="city">Taos</p>
+        <p class="muted" style="margin-top:2rem">Small work that does not need a contractor — hanging and assembly, a list of fixes in one visit, seasonal upkeep, and scheduled checks for houses that sit empty.</p>
         <p class="muted">You get a confirmed arrival window and a message when we are on the way. Work is planned to finish in the afternoon.</p>
         <p class="muted">Serving Taos County, within about 45 minutes of town.</p>
         <div class="btns">
@@ -354,7 +416,31 @@
   </main>
   <footer>
     <div class="foot">
-      <p style="font-family:var(--serif);font-size:1.125rem;margin:0">Handy People</p>
+      <p class="foot-brand"><span class="vial-sm"><svg viewBox="0 0 320 110" class="vial" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="ftr-fluid" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#c5c56f"/>
+          <stop offset="50%" stop-color="#b0b15e"/>
+          <stop offset="100%" stop-color="#8c8f4c"/>
+        </linearGradient>
+        <linearGradient id="ftr-bubble" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="55%" stop-color="#f3efe6"/>
+          <stop offset="100%" stop-color="#d4cfc4"/>
+        </linearGradient>
+        <clipPath id="ftr-clip"><path d="M70 30C114 38 206 38 250 30C272 28 286 38 286 55C286 72 272 82 250 80C206 72 114 72 70 80C48 82 34 72 34 55C34 38 48 28 70 30Z"/></clipPath>
+      </defs>
+      <line x1="160" y1="10" x2="160" y2="100" stroke="#1a1916" stroke-width="1.35" vector-effect="non-scaling-stroke"/>
+      <path d="M70 30C114 38 206 38 250 30C272 28 286 38 286 55C286 72 272 82 250 80C206 72 114 72 70 80C48 82 34 72 34 55C34 38 48 28 70 30Z" fill="#f7f4ee"/>
+      <g clip-path="url(#ftr-clip)">
+        <rect x="36" y="38" width="248" height="42" fill="url(#ftr-fluid)"/>
+        <ellipse cx="160" cy="40" rx="27" ry="13" fill="url(#ftr-bubble)"/>
+        <ellipse cx="151" cy="36" rx="9" ry="4" fill="#fff" opacity="0.5"/>
+      </g>
+      <path d="M70 30C114 38 206 38 250 30C272 28 286 38 286 55C286 72 272 82 250 80C206 72 114 72 70 80C48 82 34 72 34 55C34 38 48 28 70 30Z" fill="none" stroke="#1a1916" stroke-width="2.1" vector-effect="non-scaling-stroke"/>
+      <line x1="124" y1="30" x2="124" y2="70" stroke="#1a1916" stroke-width="1.35" vector-effect="non-scaling-stroke"/>
+      <line x1="196" y1="30" x2="196" y2="70" stroke="#1a1916" stroke-width="1.35" vector-effect="non-scaling-stroke"/>
+    </svg></span>Level Hands</p>
       <p class="muted" style="margin:0.75rem 0 0" id="contact-line"></p>
       <p style="margin:2rem 0 0;max-width:28rem;font-size:0.875rem;color:var(--fg-subtle)">This is not licensed plumbing, electrical, or gas work.</p>
     </div>
@@ -417,7 +503,7 @@
       ["Work list", val(f, "work")],
       ["Preferred days", val(f, "preferredDays") || "(none)"],
       ["Photos selected", files(f, "photos") || "(none — text photos after submit)"],
-    ]), "Visit request — Handy People");
+    ]), "Visit request — Level Hands");
 
     wire("monthly-form", "monthly-status", (f) => {
       const spend = val(f, "spendAuthority");
@@ -437,13 +523,13 @@
         ["Who to call besides you", val(f, "otherContact") || "(none)"],
         ["Spend authority", spendLine],
       ];
-    }, "Monthly check request — Handy People");
+    }, "Monthly check request — Level Hands");
 
     function wireWait(formId, statusId) {
       document.getElementById(formId).addEventListener("submit", (e) => {
         e.preventDefault();
         const email = val(e.currentTarget, "waitlistEmail");
-        mailto("Waitlist — Handy People", [["Email", email]]);
+        mailto("Waitlist — Level Hands", [["Email", email]]);
         e.currentTarget.parentElement.hidden = true;
         document.getElementById(statusId).hidden = false;
       });

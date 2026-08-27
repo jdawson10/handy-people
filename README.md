@@ -1,6 +1,6 @@
-# Handy People
+# Level Hands
 
-Home help for Taos County.
+Handyman services in Taos.
 
 Public site: https://jdawson10.github.io/handy-people/
 
